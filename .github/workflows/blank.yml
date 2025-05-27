@@ -30,7 +30,7 @@ jobs:
         with:
               java-version: '21'
               # https://github.com/actions/setup-java
-              distribution: 'microsoft'
+              distribution: 'temurin'
               
       # Runs a single command using the runners shell
       - name: Build with Maven
