@@ -86,7 +86,9 @@ public  void restoreStreams() {
         HelloWorld.main(args);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-        assertEquals("main\r\nHello World!\r\n", outContent.toString());
+        // \r\n needed locally
+        //assertEquals("main\r\nHello World!\r\n", outContent.toString());
+        assertEquals("main\nHello World!\n", outContent.toString());
         
     }
     
