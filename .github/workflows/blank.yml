@@ -29,6 +29,8 @@ jobs:
         uses: actions/setup-java@v2
         with:
               java-version: '11'
+              # https://github.com/actions/setup-java
+              distribution: 'microsoft'
               
       # Runs a single command using the runners shell
       - name: Build with Maven
